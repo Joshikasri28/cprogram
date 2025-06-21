@@ -5,8 +5,10 @@
 
 int main() {
 
-    int num;
-    scanf("%i",&num);
-    printf("%d",num);
+    char s[101];
+    fgets(s,101,stdin);
+    for(int i=0;s[i];i++)
+        if ((s[i]>='A'&& s[i]<='Z')||(s[i]>='a'&& s[i]<='z'))
+            printf("%c",s[i]);
     return 0;
 }
