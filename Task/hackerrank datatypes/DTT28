@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float num;
+    int precision;
+    scanf("%f %d",&num, &precision);
+    char format[20];
+    sprintf(format,"%%.%df",precision);
+    printf(format,num);
+        
+    return 0;
+}
