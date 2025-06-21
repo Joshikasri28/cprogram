@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,sum;
+    printf("enter the value:");
+    scanf("%d",&n);
+    sum=n*(n+1)/2;
+    printf("The Sum of number is:%d",sum);
+
+
+    return 0;
+}
