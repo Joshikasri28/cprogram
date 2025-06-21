@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   
+    printf("Let's learn 'C' together with \"SEED\" Team");  
+    return 0;
+}
