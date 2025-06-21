@@ -4,9 +4,10 @@
 #include <stdlib.h>
 
 int main() {
-    float num;
-    scanf("%f",&num);
-    printf("%d",(int)num);
-    
+
+    char s[101];
+    int len;
+    scanf("%[^\n]%n",s,&len);
+    printf("%s %d",s,len);
     return 0;
 }
