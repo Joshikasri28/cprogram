@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int isPalindrome(int n) {
+    int rev = 0, temp = n;
+    while (temp > 0) {
+        rev = rev * 10 + temp % 10;
+        temp /= 10;
+    }
+    return (n == rev);
+}
+
+int main() {
+    int num, lower, higher;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    lower = num - 1;
+    higher = num + 1;
+
+    while (1) {
+        if (isPalindrome(lower)) {
+            printf("Nearest palindrome is: %d\n", lower);
+            break;
+        }
+        if (isPalindrome(higher)) {
+            printf("Nearest palindrome is: %d\n", higher);
+            break;
+        }
+        lower--;
+        higher++;
+    }
+
+    return 0;
+}
