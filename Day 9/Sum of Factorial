@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int val=1204,sum=0;
+    while (val>0)
+    {
+        int num=val%10;
+        int product =1;        
+        for(int i=num;i>0;i--)
+        {
+            product*=i;       
+        }
+        val/=10;
+        //printf("%d\n",product);
+        sum+=product;        
+    }
+    printf("%d",sum);
+    return 0;
+}
